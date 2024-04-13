@@ -1,3 +1,11 @@
+2.7.0 (April 12, 2024)
+------------------------------
+- IntelliJ fixes ([#41](https://github.com/HaxeFlixel/flixel-templates/pull/41))
+- Doc comment for AssetPaths ([#42](https://github.com/HaxeFlixel/flixel-templates/pull/42))
+- Default to resizable on Html5 ([$45](https://github.com/HaxeFlixel/flixel-templates/pull/45))
+- Use message.reporting=pretty ([$46](https://github.com/HaxeFlixel/flixel-templates/pull/46))
+- Add FLX_NO_HEALTH define
+
 2.6.6 (April 17, 2021)
 ------------------------------
 * Added Lime XSD schema references to enable completion
