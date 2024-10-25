@@ -1,1 +1,9 @@
+# We usually never want to commit contents from export/ folder
+export/
+
+# .haxelib/ is for use with local haxelib installs
+# https://lib.haxe.org/documentation/using-haxelib/#newrepo
+# common use case, the hmm tool uses it for library management
+.haxelib/
+
 .DS_Store
