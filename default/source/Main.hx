@@ -16,9 +16,12 @@ class Main extends openfl.display.Sprite
 	public function new()
 	{
 		super();
+		
+		FlxSprite.defaultAntialiasing = true;
 		addChild(new flixel.FlxGame(
 			setup.dimensions[0], setup.dimensions[1], setup.initState,
 			setup.frames, setup.frames, !setup.splash
 		));
+		FlxG.game.focusLostFramerate = 30;
 	}
 }
