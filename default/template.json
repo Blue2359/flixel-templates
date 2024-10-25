@@ -7,14 +7,19 @@
             "cmdOption":"-n"
         },
         {
-            "replacement":"480",
-            "pattern":"${HEIGHT}",
-            "cmdOption":"-h"
+            "replacement":"Blue2359",
+            "pattern":"${COMPANY_NAME}",
+            "cmdOption":"-c"
         },
         {
-            "replacement":"640",
+            "replacement":"1280",
             "pattern":"${WIDTH}",
             "cmdOption":"-w"
+        },
+        {
+            "replacement":"720",
+            "pattern":"${HEIGHT}",
+            "cmdOption":"-h"
         }
     ]
 }
