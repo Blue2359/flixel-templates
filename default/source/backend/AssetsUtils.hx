@@ -39,15 +39,6 @@ package backend;
      */
     static function DATA(source:String, type:String):String
         return assets + source + '.$type';
-
-    /**
-      * Converts a given path to a 3D model path form.
-      * @param source Source path to concatenate 3D model path.
-      * @param type The 3D model file extension type.
-      * @return Converted 3D model path form.
-     */
-	static function MODEL(source:String, type:String = "dae"):String
-        return models + source + '.$type';
    
     /**
        * Replaces parts in the given path where the `%here` regex is placed.
@@ -65,7 +56,7 @@ package backend;
  * 
  * *(Values are constant..!)*
  */
-enum abstract AssetClassType(String) {
+enum abstract AssetClassType(String) from String to String {
     /**
      * Represents the starting point
      * path for the local assets
@@ -100,11 +91,4 @@ enum abstract AssetClassType(String) {
      * directory.
      */
     final audio = assets + "audio/";
-
-    /**
-     * Represents the models directory
-     * found inside the local assets
-     * directory.
-     */
-    final models = assets + "models/";
 }
