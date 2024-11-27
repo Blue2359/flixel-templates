@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
-		<app title="${PROJECT_NAME}" file="${PROJECT_NAME}" main="Main" version="0.0.1" company="${COMPANY_NAME}" />
+		<app file="${PROJECT_NAME}" main="Main" version="0.0.1" company="${COMPANY_NAME}" />
+
+		<app title="${PROJECT_NAME} - (DEBUG)" if="debug" />
+		<app title="${PROJECT_NAME}" unless="debug" />
+
 		<app preloader="flixel.system.FlxPreloader" />
 		<set name="SWF_VERSION" value="11.8" />
 
