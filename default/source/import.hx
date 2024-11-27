@@ -1,4 +1,4 @@
-//  This file stores `using/import` directives, which are used globally by all haxe files/modules in the source directory.
+//  This file stores `using/import` directives, which can be used globally by all haxe files/modules in the source directory.
 
 import flixel.FlxBasic;
 import flixel.FlxG;
@@ -11,3 +11,5 @@ import flixel.text.FlxText;
 import flixel.util.FlxColor;
 
 using StringTools;
+using backend.AssetsUtils;
+using backend.Utils;
